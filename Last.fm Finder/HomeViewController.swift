@@ -10,9 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,14 +23,17 @@ class HomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "searchSegue" {
+            let viewController = segue.destinationViewController as ArtistViewController
+            viewController.searchQuery = self.searchBar.text
+        }
     }
     
-    @IBOutlet weak var searchBar: UISearchBar!
-    
-    @IBAction func searchArtist() {
-        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ArtistViewController") as ArtistViewController
-        viewController.searchQuery = self.searchBar.text
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
+    override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        if identifier == "searchSegue" && self.searchBar.text.isEmpty {
+            return false
+        }
+        return true
     }
+    
 }

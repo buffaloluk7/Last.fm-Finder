@@ -15,6 +15,7 @@
 		80322E831A136D49009BB8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80322E811A136D49009BB8BE /* LaunchScreen.xib */; };
 		80322E8F1A136D49009BB8BE /* Last_fm_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */; };
 		809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F6DBB1A1371C400253469 /* ArtistViewController.swift */; };
+		80EDAB361A13F5BC00261815 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EDAB351A13F5BC00261815 /* Threading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		80322E8D1A136D49009BB8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last_fm_FinderTests.swift; sourceTree = "<group>"; };
 		809F6DBB1A1371C400253469 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		80EDAB351A13F5BC00261815 /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				80322E811A136D49009BB8BE /* LaunchScreen.xib */,
 				80322E771A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld */,
 				80322E731A136D49009BB8BE /* Supporting Files */,
+				80EDAB351A13F5BC00261815 /* Threading.swift */,
 			);
 			path = "Last.fm Finder";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80EDAB361A13F5BC00261815 /* Threading.swift in Sources */,
 				80322E7B1A136D49009BB8BE /* HomeViewController.swift in Sources */,
 				80322E791A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld in Sources */,
 				80322E761A136D49009BB8BE /* AppDelegate.swift in Sources */,
