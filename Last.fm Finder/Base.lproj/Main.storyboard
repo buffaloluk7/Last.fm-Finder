@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dNY-Ix-XQ2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Last_fm_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="vXZ-lx-hvc" userLabel="Home" customClass="HomeViewController" customModule="Last_fm_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,23 +17,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69K-8Y-IIt">
-                                <rect key="frame" x="217" y="285" width="167" height="30"/>
-                                <state key="normal" title="Dummy Dieter Button :-)">
+                            <searchBar contentMode="redraw" restorationIdentifier="searchBar" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-QW-wVU">
+                                <rect key="frame" x="0.0" y="64" width="524" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="iGP-15-f5c"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfS-OA-x78">
+                                <rect key="frame" x="524" y="64" width="76" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="Sg4-1Z-ANF"/>
+                                </constraints>
+                                <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchArtist" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ewV-yr-13t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="69K-8Y-IIt" secondAttribute="centerY" id="mxt-vR-072"/>
-                            <constraint firstAttribute="centerX" secondItem="69K-8Y-IIt" secondAttribute="centerX" id="qEe-4w-mJI"/>
+                            <constraint firstItem="xL3-QW-wVU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="445-uc-UDf"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="leading" secondItem="xL3-QW-wVU" secondAttribute="trailing" id="DOV-VL-Uad"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="top" id="Mx4-cm-x2h"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="cXO-7J-BEs"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="bottom" secondItem="xL3-QW-wVU" secondAttribute="bottom" id="vW5-5x-AIh"/>
+                            <constraint firstAttribute="trailing" secondItem="bfS-OA-x78" secondAttribute="trailing" id="vmz-N6-HyF"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Last.fm Finder" id="fuh-MA-TOy"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="xL3-QW-wVU" id="g0x-pX-iYw"/>
+                        <segue destination="T8f-nu-irr" kind="showDetail" id="CAE-ib-ckF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451" y="390"/>
+            <point key="canvasLocation" x="1139" y="370"/>
+        </scene>
+        <!--Artist-->
+        <scene sceneID="HiL-C3-FgF">
+            <objects>
+                <viewController storyboardIdentifier="ArtistViewController" id="T8f-nu-irr" userLabel="Artist" customClass="ArtistViewController" customModule="Last_fm_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QGN-ZJ-2AE"/>
+                        <viewControllerLayoutGuide type="bottom" id="vbs-iz-Pqa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ovr-yy-Y5z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ArtistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-PQ-kLd">
+                                <rect key="frame" x="16" y="20" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" id="hM0-cy-8aJ"/>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" id="ln2-oL-y6g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistName" destination="TmH-PQ-kLd" id="Qjg-io-qLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKu-0h-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="370"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sym-l9-A00">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dNY-Ix-XQ2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eiR-pY-T8c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="wuR-Qw-Eql"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfS-og-LqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="370"/>
         </scene>
     </scenes>
 </document>

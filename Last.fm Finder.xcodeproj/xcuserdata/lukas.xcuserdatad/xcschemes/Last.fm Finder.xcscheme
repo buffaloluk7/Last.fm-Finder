@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80BFAD951A0281EB00C7149B"
+               BlueprintIdentifier = "80322E6F1A136D49009BB8BE"
                BuildableName = "Last.fm Finder.app"
                BlueprintName = "Last.fm Finder"
                ReferencedContainer = "container:Last.fm Finder.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80BFADAA1A0281EB00C7149B"
+               BlueprintIdentifier = "80322E871A136D49009BB8BE"
                BuildableName = "Last.fm FinderTests.xctest"
                BlueprintName = "Last.fm FinderTests"
                ReferencedContainer = "container:Last.fm Finder.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80BFADAA1A0281EB00C7149B"
+               BlueprintIdentifier = "80322E871A136D49009BB8BE"
                BuildableName = "Last.fm FinderTests.xctest"
                BlueprintName = "Last.fm FinderTests"
                ReferencedContainer = "container:Last.fm Finder.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80BFAD951A0281EB00C7149B"
+            BlueprintIdentifier = "80322E6F1A136D49009BB8BE"
             BuildableName = "Last.fm Finder.app"
             BlueprintName = "Last.fm Finder"
             ReferencedContainer = "container:Last.fm Finder.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80BFAD951A0281EB00C7149B"
+            BlueprintIdentifier = "80322E6F1A136D49009BB8BE"
             BuildableName = "Last.fm Finder.app"
             BlueprintName = "Last.fm Finder"
             ReferencedContainer = "container:Last.fm Finder.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80BFAD951A0281EB00C7149B"
+            BlueprintIdentifier = "80322E6F1A136D49009BB8BE"
             BuildableName = "Last.fm Finder.app"
             BlueprintName = "Last.fm Finder"
             ReferencedContainer = "container:Last.fm Finder.xcodeproj">

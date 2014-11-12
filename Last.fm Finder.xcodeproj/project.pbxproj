@@ -7,46 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80BFAD9C1A0281EB00C7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BFAD9B1A0281EB00C7149B /* AppDelegate.swift */; };
-		80BFAD9E1A0281EB00C7149B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BFAD9D1A0281EB00C7149B /* ViewController.swift */; };
-		80BFADA11A0281EB00C7149B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BFAD9F1A0281EB00C7149B /* Main.storyboard */; };
-		80BFADA31A0281EB00C7149B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BFADA21A0281EB00C7149B /* Images.xcassets */; };
-		80BFADA61A0281EB00C7149B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80BFADA41A0281EB00C7149B /* LaunchScreen.xib */; };
-		80BFADB21A0281EB00C7149B /* Last_fm_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BFADB11A0281EB00C7149B /* Last_fm_FinderTests.swift */; };
+		80322E761A136D49009BB8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E751A136D49009BB8BE /* AppDelegate.swift */; };
+		80322E791A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80322E771A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld */; };
+		80322E7B1A136D49009BB8BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E7A1A136D49009BB8BE /* HomeViewController.swift */; };
+		80322E7E1A136D49009BB8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80322E7C1A136D49009BB8BE /* Main.storyboard */; };
+		80322E801A136D49009BB8BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80322E7F1A136D49009BB8BE /* Images.xcassets */; };
+		80322E831A136D49009BB8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80322E811A136D49009BB8BE /* LaunchScreen.xib */; };
+		80322E8F1A136D49009BB8BE /* Last_fm_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */; };
+		809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F6DBB1A1371C400253469 /* ArtistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		80BFADAC1A0281EB00C7149B /* PBXContainerItemProxy */ = {
+		80322E891A136D49009BB8BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 80BFAD8E1A0281EB00C7149B /* Project object */;
+			containerPortal = 80322E681A136D49009BB8BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80BFAD951A0281EB00C7149B;
+			remoteGlobalIDString = 80322E6F1A136D49009BB8BE;
 			remoteInfo = "Last.fm Finder";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		80BFAD961A0281EB00C7149B /* Last.fm Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Last.fm Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80BFAD9A1A0281EB00C7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80BFAD9B1A0281EB00C7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80BFAD9D1A0281EB00C7149B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80BFADA01A0281EB00C7149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		80BFADA21A0281EB00C7149B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		80BFADA51A0281EB00C7149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		80BFADAB1A0281EB00C7149B /* Last.fm FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Last.fm FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80BFADB01A0281EB00C7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80BFADB11A0281EB00C7149B /* Last_fm_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last_fm_FinderTests.swift; sourceTree = "<group>"; };
+		80322E701A136D49009BB8BE /* Last.fm Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Last.fm Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80322E741A136D49009BB8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80322E751A136D49009BB8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80322E781A136D49009BB8BE /* Last_fm_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Last_fm_Finder.xcdatamodel; sourceTree = "<group>"; };
+		80322E7A1A136D49009BB8BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80322E7D1A136D49009BB8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80322E7F1A136D49009BB8BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80322E821A136D49009BB8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		80322E881A136D49009BB8BE /* Last.fm FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Last.fm FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80322E8D1A136D49009BB8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last_fm_FinderTests.swift; sourceTree = "<group>"; };
+		809F6DBB1A1371C400253469 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		80BFAD931A0281EB00C7149B /* Frameworks */ = {
+		80322E6D1A136D49009BB8BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80BFADA81A0281EB00C7149B /* Frameworks */ = {
+		80322E851A136D49009BB8BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,72 +60,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		80BFAD8D1A0281EB00C7149B = {
+		80322E671A136D49009BB8BE = {
 			isa = PBXGroup;
 			children = (
-				80BFAD981A0281EB00C7149B /* Last.fm Finder */,
-				80BFADAE1A0281EB00C7149B /* Last.fm FinderTests */,
-				80BFAD971A0281EB00C7149B /* Products */,
+				80322E721A136D49009BB8BE /* Last.fm Finder */,
+				80322E8B1A136D49009BB8BE /* Last.fm FinderTests */,
+				80322E711A136D49009BB8BE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		80BFAD971A0281EB00C7149B /* Products */ = {
+		80322E711A136D49009BB8BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80BFAD961A0281EB00C7149B /* Last.fm Finder.app */,
-				80BFADAB1A0281EB00C7149B /* Last.fm FinderTests.xctest */,
+				80322E701A136D49009BB8BE /* Last.fm Finder.app */,
+				80322E881A136D49009BB8BE /* Last.fm FinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80BFAD981A0281EB00C7149B /* Last.fm Finder */ = {
+		80322E721A136D49009BB8BE /* Last.fm Finder */ = {
 			isa = PBXGroup;
 			children = (
-				80BFAD9B1A0281EB00C7149B /* AppDelegate.swift */,
-				80BFAD9D1A0281EB00C7149B /* ViewController.swift */,
-				80BFAD9F1A0281EB00C7149B /* Main.storyboard */,
-				80BFADA21A0281EB00C7149B /* Images.xcassets */,
-				80BFADA41A0281EB00C7149B /* LaunchScreen.xib */,
-				80BFAD991A0281EB00C7149B /* Supporting Files */,
+				809F6DBA1A1371A000253469 /* ViewControllers */,
+				80322E751A136D49009BB8BE /* AppDelegate.swift */,
+				80322E7C1A136D49009BB8BE /* Main.storyboard */,
+				80322E7F1A136D49009BB8BE /* Images.xcassets */,
+				80322E811A136D49009BB8BE /* LaunchScreen.xib */,
+				80322E771A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld */,
+				80322E731A136D49009BB8BE /* Supporting Files */,
 			);
 			path = "Last.fm Finder";
 			sourceTree = "<group>";
 		};
-		80BFAD991A0281EB00C7149B /* Supporting Files */ = {
+		80322E731A136D49009BB8BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				80BFAD9A1A0281EB00C7149B /* Info.plist */,
+				80322E741A136D49009BB8BE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		80BFADAE1A0281EB00C7149B /* Last.fm FinderTests */ = {
+		80322E8B1A136D49009BB8BE /* Last.fm FinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				80BFADB11A0281EB00C7149B /* Last_fm_FinderTests.swift */,
-				80BFADAF1A0281EB00C7149B /* Supporting Files */,
+				80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */,
+				80322E8C1A136D49009BB8BE /* Supporting Files */,
 			);
 			path = "Last.fm FinderTests";
 			sourceTree = "<group>";
 		};
-		80BFADAF1A0281EB00C7149B /* Supporting Files */ = {
+		80322E8C1A136D49009BB8BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				80BFADB01A0281EB00C7149B /* Info.plist */,
+				80322E8D1A136D49009BB8BE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		809F6DBA1A1371A000253469 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80322E7A1A136D49009BB8BE /* HomeViewController.swift */,
+				809F6DBB1A1371C400253469 /* ArtistViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80BFAD951A0281EB00C7149B /* Last.fm Finder */ = {
+		80322E6F1A136D49009BB8BE /* Last.fm Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80BFADB51A0281EB00C7149B /* Build configuration list for PBXNativeTarget "Last.fm Finder" */;
+			buildConfigurationList = 80322E921A136D49009BB8BE /* Build configuration list for PBXNativeTarget "Last.fm Finder" */;
 			buildPhases = (
-				80BFAD921A0281EB00C7149B /* Sources */,
-				80BFAD931A0281EB00C7149B /* Frameworks */,
-				80BFAD941A0281EB00C7149B /* Resources */,
+				80322E6C1A136D49009BB8BE /* Sources */,
+				80322E6D1A136D49009BB8BE /* Frameworks */,
+				80322E6E1A136D49009BB8BE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +143,46 @@
 			);
 			name = "Last.fm Finder";
 			productName = "Last.fm Finder";
-			productReference = 80BFAD961A0281EB00C7149B /* Last.fm Finder.app */;
+			productReference = 80322E701A136D49009BB8BE /* Last.fm Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		80BFADAA1A0281EB00C7149B /* Last.fm FinderTests */ = {
+		80322E871A136D49009BB8BE /* Last.fm FinderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80BFADB81A0281EB00C7149B /* Build configuration list for PBXNativeTarget "Last.fm FinderTests" */;
+			buildConfigurationList = 80322E951A136D49009BB8BE /* Build configuration list for PBXNativeTarget "Last.fm FinderTests" */;
 			buildPhases = (
-				80BFADA71A0281EB00C7149B /* Sources */,
-				80BFADA81A0281EB00C7149B /* Frameworks */,
-				80BFADA91A0281EB00C7149B /* Resources */,
+				80322E841A136D49009BB8BE /* Sources */,
+				80322E851A136D49009BB8BE /* Frameworks */,
+				80322E861A136D49009BB8BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				80BFADAD1A0281EB00C7149B /* PBXTargetDependency */,
+				80322E8A1A136D49009BB8BE /* PBXTargetDependency */,
 			);
 			name = "Last.fm FinderTests";
 			productName = "Last.fm FinderTests";
-			productReference = 80BFADAB1A0281EB00C7149B /* Last.fm FinderTests.xctest */;
+			productReference = 80322E881A136D49009BB8BE /* Last.fm FinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		80BFAD8E1A0281EB00C7149B /* Project object */ = {
+		80322E681A136D49009BB8BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Lukas Streiter";
 				TargetAttributes = {
-					80BFAD951A0281EB00C7149B = {
+					80322E6F1A136D49009BB8BE = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					80BFADAA1A0281EB00C7149B = {
+					80322E871A136D49009BB8BE = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 80BFAD951A0281EB00C7149B;
+						TestTargetID = 80322E6F1A136D49009BB8BE;
 					};
 				};
 			};
-			buildConfigurationList = 80BFAD911A0281EB00C7149B /* Build configuration list for PBXProject "Last.fm Finder" */;
+			buildConfigurationList = 80322E6B1A136D49009BB8BE /* Build configuration list for PBXProject "Last.fm Finder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +190,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 80BFAD8D1A0281EB00C7149B;
-			productRefGroup = 80BFAD971A0281EB00C7149B /* Products */;
+			mainGroup = 80322E671A136D49009BB8BE;
+			productRefGroup = 80322E711A136D49009BB8BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80BFAD951A0281EB00C7149B /* Last.fm Finder */,
-				80BFADAA1A0281EB00C7149B /* Last.fm FinderTests */,
+				80322E6F1A136D49009BB8BE /* Last.fm Finder */,
+				80322E871A136D49009BB8BE /* Last.fm FinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		80BFAD941A0281EB00C7149B /* Resources */ = {
+		80322E6E1A136D49009BB8BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BFADA11A0281EB00C7149B /* Main.storyboard in Resources */,
-				80BFADA61A0281EB00C7149B /* LaunchScreen.xib in Resources */,
-				80BFADA31A0281EB00C7149B /* Images.xcassets in Resources */,
+				80322E7E1A136D49009BB8BE /* Main.storyboard in Resources */,
+				80322E831A136D49009BB8BE /* LaunchScreen.xib in Resources */,
+				80322E801A136D49009BB8BE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80BFADA91A0281EB00C7149B /* Resources */ = {
+		80322E861A136D49009BB8BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +222,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		80BFAD921A0281EB00C7149B /* Sources */ = {
+		80322E6C1A136D49009BB8BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BFAD9E1A0281EB00C7149B /* ViewController.swift in Sources */,
-				80BFAD9C1A0281EB00C7149B /* AppDelegate.swift in Sources */,
+				80322E7B1A136D49009BB8BE /* HomeViewController.swift in Sources */,
+				80322E791A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld in Sources */,
+				80322E761A136D49009BB8BE /* AppDelegate.swift in Sources */,
+				809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80BFADA71A0281EB00C7149B /* Sources */ = {
+		80322E841A136D49009BB8BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BFADB21A0281EB00C7149B /* Last_fm_FinderTests.swift in Sources */,
+				80322E8F1A136D49009BB8BE /* Last_fm_FinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		80BFADAD1A0281EB00C7149B /* PBXTargetDependency */ = {
+		80322E8A1A136D49009BB8BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 80BFAD951A0281EB00C7149B /* Last.fm Finder */;
-			targetProxy = 80BFADAC1A0281EB00C7149B /* PBXContainerItemProxy */;
+			target = 80322E6F1A136D49009BB8BE /* Last.fm Finder */;
+			targetProxy = 80322E891A136D49009BB8BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		80BFAD9F1A0281EB00C7149B /* Main.storyboard */ = {
+		80322E7C1A136D49009BB8BE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				80BFADA01A0281EB00C7149B /* Base */,
+				80322E7D1A136D49009BB8BE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		80BFADA41A0281EB00C7149B /* LaunchScreen.xib */ = {
+		80322E811A136D49009BB8BE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				80BFADA51A0281EB00C7149B /* Base */,
+				80322E821A136D49009BB8BE /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +271,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		80BFADB31A0281EB00C7149B /* Debug */ = {
+		80322E901A136D49009BB8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		80BFADB41A0281EB00C7149B /* Release */ = {
+		80322E911A136D49009BB8BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,29 +348,27 @@
 			};
 			name = Release;
 		};
-		80BFADB61A0281EB00C7149B /* Debug */ = {
+		80322E931A136D49009BB8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Last.fm Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		80BFADB71A0281EB00C7149B /* Release */ = {
+		80322E941A136D49009BB8BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Last.fm Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		80BFADB91A0281EB00C7149B /* Debug */ = {
+		80322E961A136D49009BB8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -373,7 +387,7 @@
 			};
 			name = Debug;
 		};
-		80BFADBA1A0281EB00C7149B /* Release */ = {
+		80322E971A136D49009BB8BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -391,32 +405,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		80BFAD911A0281EB00C7149B /* Build configuration list for PBXProject "Last.fm Finder" */ = {
+		80322E6B1A136D49009BB8BE /* Build configuration list for PBXProject "Last.fm Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80BFADB31A0281EB00C7149B /* Debug */,
-				80BFADB41A0281EB00C7149B /* Release */,
+				80322E901A136D49009BB8BE /* Debug */,
+				80322E911A136D49009BB8BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80BFADB51A0281EB00C7149B /* Build configuration list for PBXNativeTarget "Last.fm Finder" */ = {
+		80322E921A136D49009BB8BE /* Build configuration list for PBXNativeTarget "Last.fm Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80BFADB61A0281EB00C7149B /* Debug */,
-				80BFADB71A0281EB00C7149B /* Release */,
+				80322E931A136D49009BB8BE /* Debug */,
+				80322E941A136D49009BB8BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		80BFADB81A0281EB00C7149B /* Build configuration list for PBXNativeTarget "Last.fm FinderTests" */ = {
+		80322E951A136D49009BB8BE /* Build configuration list for PBXNativeTarget "Last.fm FinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80BFADB91A0281EB00C7149B /* Debug */,
-				80BFADBA1A0281EB00C7149B /* Release */,
+				80322E961A136D49009BB8BE /* Debug */,
+				80322E971A136D49009BB8BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80322E771A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80322E781A136D49009BB8BE /* Last_fm_Finder.xcdatamodel */,
+			);
+			currentVersion = 80322E781A136D49009BB8BE /* Last_fm_Finder.xcdatamodel */;
+			path = Last_fm_Finder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 80BFAD8E1A0281EB00C7149B /* Project object */;
+	rootObject = 80322E681A136D49009BB8BE /* Project object */;
 }

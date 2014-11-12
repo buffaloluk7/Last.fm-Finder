@@ -2,7 +2,7 @@
 //  Last_fm_FinderTests.swift
 //  Last.fm FinderTests
 //
-//  Created by Lukas Streiter on 30/10/14.
+//  Created by Lukas Streiter on 12/11/14.
 //  Copyright (c) 2014 Lukas Streiter. All rights reserved.
 //
 
