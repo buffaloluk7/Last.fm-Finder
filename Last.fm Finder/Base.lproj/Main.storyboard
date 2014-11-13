@@ -78,8 +78,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-PQ-kLd">
-                                <rect key="frame" x="16" y="72" width="122" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="16" y="72" width="125" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -95,11 +95,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-rp-RWW">
+                                <rect key="frame" x="291" y="291" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDZ-kq-szq">
+                                <rect key="frame" x="247" y="173" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vDZ-kq-szq" firstAttribute="centerX" secondItem="Ovr-yy-Y5z" secondAttribute="centerX" id="1TY-id-BXX"/>
                             <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="dy9-Ep-sds" secondAttribute="leading" id="1VV-g4-cQn"/>
+                            <constraint firstItem="vbs-iz-Pqa" firstAttribute="top" secondItem="fHA-rp-RWW" secondAttribute="bottom" constant="245" id="2oj-J0-jgn"/>
+                            <constraint firstItem="fHA-rp-RWW" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leading" constant="291" id="7cL-jO-Y1v"/>
                             <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" id="KH8-Tl-3aX"/>
+                            <constraint firstItem="fHA-rp-RWW" firstAttribute="top" secondItem="vDZ-kq-szq" secondAttribute="bottom" constant="97" id="Vg2-01-eUS"/>
                             <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="ZRy-eM-mrR" secondAttribute="leading" id="XSX-nW-JsC"/>
                             <constraint firstItem="ZRy-eM-mrR" firstAttribute="top" secondItem="dy9-Ep-sds" secondAttribute="bottom" constant="8" symbolic="YES" id="YnT-WA-T7c"/>
                             <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="8" symbolic="YES" id="o0g-D9-30V"/>
@@ -110,6 +123,8 @@
                         <outlet property="albumName" destination="dy9-Ep-sds" id="kbT-rh-wnR"/>
                         <outlet property="albumPlayCount" destination="ZRy-eM-mrR" id="hmD-pW-Wm1"/>
                         <outlet property="artistName" destination="TmH-PQ-kLd" id="NYU-AU-2VN"/>
+                        <outlet property="errorMessage" destination="vDZ-kq-szq" id="C5A-RV-AgE"/>
+                        <outlet property="loadingView" destination="fHA-rp-RWW" id="qfh-iK-phb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKu-0h-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>

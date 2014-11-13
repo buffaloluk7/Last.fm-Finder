@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
+            endingLineNumber = "25">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,9 +28,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "shouldPerformSegueWithIdentifier(_:sender:)"
-            landmarkType = "5">
+            endingLineNumber = "37">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,9 +42,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "shouldPerformSegueWithIdentifier(_:sender:)"
-            landmarkType = "5">
+            endingLineNumber = "32">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +56,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "shouldPerformSegueWithIdentifier(_:sender:)"
-            landmarkType = "5">
+            endingLineNumber = "33">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,12 +82,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/ArtistViewController.swift"
-            timestampString = "437580196.899455"
+            timestampString = "437596430.970272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "failure(_:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "success(_:)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -136,12 +128,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/ArtistViewController.swift"
-            timestampString = "437580196.899455"
+            timestampString = "437596430.970272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "failure(_:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "success(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -200,13 +192,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/ArtistViewController.swift"
-            timestampString = "437580196.899455"
+            timestampString = "437596430.970272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "ArtistViewController"
-            landmarkType = "3">
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "failure(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

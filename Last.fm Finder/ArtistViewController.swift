@@ -16,46 +16,56 @@ class ArtistViewController: UIViewController, GetTopAlbumDelegate {
     @IBOutlet weak var artistName: UILabel!
     @IBOutlet weak var albumName: UILabel!
     @IBOutlet weak var albumPlayCount: UILabel!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
+    @IBOutlet weak var errorMessage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Empty all labels
+        self.title = "Top album"
+        self.artistName.text = ""
+        self.albumName.text = ""
+        self.albumPlayCount.text = ""
+        self.errorMessage.text = ""
 
         // Use a semicolon if there is code above the closure to prevent a compiler error.
         //{ self.getArtist() } ~> { self.updateUI($0) }
-        getAndShowArtist()
+        self.getAndShowArtist()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func getAndShowArtist() {
+        self.loadingView.startAnimating()
+        
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             self.lastFmApi.getTopAlbum(self.searchQuery, delegate: self)
         }
     }
     
     func success(album: Album?) {
-        dispatch_async(dispatch_get_main_queue(), {
-            self.title = self.searchQuery
+        dispatch_async(dispatch_get_main_queue()) {
+            self.loadingView.stopAnimating()
+            
             self.artistName.text = self.searchQuery
         
             if let topAlbum = album {
                 self.albumName.text = topAlbum.name
-                self.albumPlayCount.text = String(topAlbum.playCount!)
+                self.albumPlayCount.text = "\(topAlbum.playCount!) times played"
+            } else {
+                self.errorMessage.text = "No albums available."
             }
-        })
+        }
     }
     
     func failure(error: NSError) {
-        println("error")
-    }
-    
-    func log(message: String) {
-        let main = NSThread.currentThread().isMainThread
-        let name = main ? "[main]" : "[back]"
-        println("\(name) \(message)")
+        dispatch_async(dispatch_get_main_queue()) {
+            self.errorMessage.text = "Unable to retrieve data."
+            self.loadingView.stopAnimating()
+        }
     }
     
 }
