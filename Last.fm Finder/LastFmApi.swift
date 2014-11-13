@@ -30,7 +30,7 @@ class LastFmApi {
         // Append parameters
         var parameters = self.apiParameters
         parameters["method"] = LastFmMethod.TopAlbums.rawValue as String
-        parameters["artist"] = artistName
+        parameters["artist"] = artistName //.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
         // Execute request
         request.GET(self.apiURL, parameters: parameters, success: {(response: HTTPResponse) in

@@ -22,7 +22,6 @@ class ArtistViewController: UIViewController, GetTopAlbumDelegate {
 
         // Use a semicolon if there is code above the closure to prevent a compiler error.
         //{ self.getArtist() } ~> { self.updateUI($0) }
-        
         getAndShowArtist()
     }
     
@@ -38,17 +37,25 @@ class ArtistViewController: UIViewController, GetTopAlbumDelegate {
     }
     
     func success(album: Album?) {
-        self.title = self.searchQuery
-        self.artistName.text = self.searchQuery
+        dispatch_async(dispatch_get_main_queue(), {
+            self.title = self.searchQuery
+            self.artistName.text = self.searchQuery
         
-        if let topAlbum = album {
-            self.albumName.text = topAlbum.name
-            self.albumPlayCount.text = String(topAlbum.playCount!)
-        }
+            if let topAlbum = album {
+                self.albumName.text = topAlbum.name
+                self.albumPlayCount.text = String(topAlbum.playCount!)
+            }
+        })
     }
     
     func failure(error: NSError) {
         println("error")
+    }
+    
+    func log(message: String) {
+        let main = NSThread.currentThread().isMainThread
+        let name = main ? "[main]" : "[back]"
+        println("\(name) \(message)")
     }
     
 }
