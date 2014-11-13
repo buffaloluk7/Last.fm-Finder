@@ -23,7 +23,7 @@ class LastFmApi {
     
     func getTopAlbum(artistName: String, delegate: GetTopAlbumDelegate) {
         // Create request object
-        var request = HTTPTask()
+        let request = HTTPTask()
         request.requestSerializer = HTTPRequestSerializer()
         request.responseSerializer = JSONResponseSerializer()
         
