@@ -15,6 +15,10 @@
 		80322E831A136D49009BB8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80322E811A136D49009BB8BE /* LaunchScreen.xib */; };
 		80322E8F1A136D49009BB8BE /* Last_fm_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */; };
 		809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F6DBB1A1371C400253469 /* ArtistViewController.swift */; };
+		80BA640B1A14AF1100F42692 /* LastFmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA640A1A14AF1100F42692 /* LastFmApi.swift */; };
+		80BA640D1A14B01D00F42692 /* LastFmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA640C1A14B01D00F42692 /* LastFmMethods.swift */; };
+		80BA64121A14B14300F42692 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA64111A14B14300F42692 /* Artist.swift */; };
+		80BA64141A14B14F00F42692 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA64131A14B14F00F42692 /* Album.swift */; };
 		80EDAB361A13F5BC00261815 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EDAB351A13F5BC00261815 /* Threading.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		80322E8D1A136D49009BB8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last_fm_FinderTests.swift; sourceTree = "<group>"; };
 		809F6DBB1A1371C400253469 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		80BA640A1A14AF1100F42692 /* LastFmApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastFmApi.swift; sourceTree = "<group>"; };
+		80BA640C1A14B01D00F42692 /* LastFmMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastFmMethods.swift; sourceTree = "<group>"; };
+		80BA64111A14B14300F42692 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		80BA64131A14B14F00F42692 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		80EDAB351A13F5BC00261815 /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +91,9 @@
 		80322E721A136D49009BB8BE /* Last.fm Finder */ = {
 			isa = PBXGroup;
 			children = (
+				80BA64101A14B12C00F42692 /* Models */,
+				80BA640F1A14B03700F42692 /* Helpers */,
+				80BA640E1A14B02200F42692 /* LastFmApi */,
 				809F6DBA1A1371A000253469 /* ViewControllers */,
 				80322E751A136D49009BB8BE /* AppDelegate.swift */,
 				80322E7C1A136D49009BB8BE /* Main.storyboard */,
@@ -90,7 +101,6 @@
 				80322E811A136D49009BB8BE /* LaunchScreen.xib */,
 				80322E771A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld */,
 				80322E731A136D49009BB8BE /* Supporting Files */,
-				80EDAB351A13F5BC00261815 /* Threading.swift */,
 			);
 			path = "Last.fm Finder";
 			sourceTree = "<group>";
@@ -127,6 +137,32 @@
 				809F6DBB1A1371C400253469 /* ArtistViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80BA640E1A14B02200F42692 /* LastFmApi */ = {
+			isa = PBXGroup;
+			children = (
+				80BA640A1A14AF1100F42692 /* LastFmApi.swift */,
+				80BA640C1A14B01D00F42692 /* LastFmMethods.swift */,
+			);
+			name = LastFmApi;
+			sourceTree = "<group>";
+		};
+		80BA640F1A14B03700F42692 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80EDAB351A13F5BC00261815 /* Threading.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		80BA64101A14B12C00F42692 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80BA64111A14B14300F42692 /* Artist.swift */,
+				80BA64131A14B14F00F42692 /* Album.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +267,12 @@
 			files = (
 				80EDAB361A13F5BC00261815 /* Threading.swift in Sources */,
 				80322E7B1A136D49009BB8BE /* HomeViewController.swift in Sources */,
+				80BA640D1A14B01D00F42692 /* LastFmMethods.swift in Sources */,
 				80322E791A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld in Sources */,
+				80BA640B1A14AF1100F42692 /* LastFmApi.swift in Sources */,
+				80BA64141A14B14F00F42692 /* Album.swift in Sources */,
 				80322E761A136D49009BB8BE /* AppDelegate.swift in Sources */,
+				80BA64121A14B14300F42692 /* Artist.swift in Sources */,
 				809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

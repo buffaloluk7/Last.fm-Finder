@@ -10,23 +10,17 @@ import UIKit
 
 class ArtistViewController: UIViewController {
     
+    var lastFmApi: LastFmApi = LastFmApi()
     var searchQuery: String = ""
     
     @IBOutlet weak var artistName: UILabel!
     @IBOutlet weak var playCount: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.title = searchQuery
-        self.artistName.text = searchQuery;
-        
-        // start last.fm request in background task
-        // process response
-        // fill ui with data
-        
+        super.viewDidLoad();
+
         // Use a semicolon if there is code above the closure to prevent a compiler error.
-        { self.getPlayCount() } ~> { self.updateUI($0) }
+        { self.getArtist() } ~> { self.updateUI($0) }
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,12 +28,17 @@ class ArtistViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getPlayCount() -> Int {
-        return 5
+    func getArtist() -> Artist {
+        return self.lastFmApi.getTopAlbum(self.searchQuery)
     }
     
-    func updateUI(playCount: Int) {
-        self.playCount.text = String(playCount)
+    func updateUI(artist: Artist) {
+        self.title = artist.name
+        self.artistName.text = artist.name
+        
+        if let topAlbum = artist.topAlbums.first {
+            self.playCount.text = String(topAlbum.playcount)
+        }
     }
     
 }
