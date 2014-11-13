@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an artist name." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWw-EY-mNq">
-                                <rect key="frame" x="193" y="187" width="214" height="21"/>
+                                <rect key="frame" x="193" y="175" width="214" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,13 +43,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CWw-EY-mNq" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="bottom" constant="67" id="35I-1c-TvH"/>
                             <constraint firstItem="xL3-QW-wVU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4Tc-nm-WX4"/>
-                            <constraint firstItem="CWw-EY-mNq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UP7-kh-3jT"/>
                             <constraint firstItem="bfS-OA-x78" firstAttribute="leading" secondItem="xL3-QW-wVU" secondAttribute="trailing" id="eMY-ET-2tP"/>
+                            <constraint firstItem="CWw-EY-mNq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fV1-UJ-Bl3"/>
                             <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="top" id="gMR-GM-NMr"/>
                             <constraint firstAttribute="trailing" secondItem="bfS-OA-x78" secondAttribute="trailing" id="h2P-X0-A3M"/>
                             <constraint firstItem="xL3-QW-wVU" firstAttribute="bottom" secondItem="bfS-OA-x78" secondAttribute="bottom" id="kIR-Cs-69Y"/>
-                            <constraint firstItem="CWw-EY-mNq" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="bottom" constant="79" id="omi-cQ-f77"/>
                             <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="xNS-6i-snc"/>
                         </constraints>
                     </view>
@@ -96,10 +96,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-rp-RWW">
-                                <rect key="frame" x="291" y="291" width="20" height="20"/>
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ErrorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDZ-kq-szq">
-                                <rect key="frame" x="247" y="173" width="107" height="21"/>
+                                <rect key="frame" x="247" y="172" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,16 +107,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vDZ-kq-szq" firstAttribute="centerX" secondItem="Ovr-yy-Y5z" secondAttribute="centerX" id="1TY-id-BXX"/>
-                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="dy9-Ep-sds" secondAttribute="leading" id="1VV-g4-cQn"/>
-                            <constraint firstItem="vbs-iz-Pqa" firstAttribute="top" secondItem="fHA-rp-RWW" secondAttribute="bottom" constant="245" id="2oj-J0-jgn"/>
-                            <constraint firstItem="fHA-rp-RWW" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leading" constant="291" id="7cL-jO-Y1v"/>
-                            <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" id="KH8-Tl-3aX"/>
-                            <constraint firstItem="fHA-rp-RWW" firstAttribute="top" secondItem="vDZ-kq-szq" secondAttribute="bottom" constant="97" id="Vg2-01-eUS"/>
-                            <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="ZRy-eM-mrR" secondAttribute="leading" id="XSX-nW-JsC"/>
-                            <constraint firstItem="ZRy-eM-mrR" firstAttribute="top" secondItem="dy9-Ep-sds" secondAttribute="bottom" constant="8" symbolic="YES" id="YnT-WA-T7c"/>
-                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="8" symbolic="YES" id="o0g-D9-30V"/>
-                            <constraint firstItem="dy9-Ep-sds" firstAttribute="top" secondItem="TmH-PQ-kLd" secondAttribute="bottom" constant="8" symbolic="YES" id="zo0-2C-lsf"/>
+                            <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" id="3ys-Q7-ubo"/>
+                            <constraint firstItem="ZRy-eM-mrR" firstAttribute="leading" secondItem="dy9-Ep-sds" secondAttribute="leading" id="6ow-Yq-Yib"/>
+                            <constraint firstItem="vDZ-kq-szq" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="108" id="Hha-OF-dEG"/>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="8" symbolic="YES" id="I90-eE-t15"/>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="dy9-Ep-sds" secondAttribute="leading" id="M2k-8C-yHr"/>
+                            <constraint firstItem="fHA-rp-RWW" firstAttribute="top" secondItem="vDZ-kq-szq" secondAttribute="bottom" constant="97" id="WxN-OO-4mQ"/>
+                            <constraint firstItem="dy9-Ep-sds" firstAttribute="top" secondItem="Ovr-yy-Y5z" secondAttribute="top" constant="110" id="dKK-Aq-3eF"/>
+                            <constraint firstAttribute="centerX" secondItem="fHA-rp-RWW" secondAttribute="centerX" id="eGz-AY-6TJ"/>
+                            <constraint firstItem="vDZ-kq-szq" firstAttribute="centerX" secondItem="fHA-rp-RWW" secondAttribute="centerX" id="tbm-Dl-npI"/>
+                            <constraint firstItem="ZRy-eM-mrR" firstAttribute="top" secondItem="dy9-Ep-sds" secondAttribute="bottom" constant="8" symbolic="YES" id="yFL-5q-wXh"/>
                         </constraints>
                     </view>
                     <connections>
