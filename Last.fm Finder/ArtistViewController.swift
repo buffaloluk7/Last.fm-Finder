@@ -8,19 +8,22 @@
 
 import UIKit
 
-class ArtistViewController: UIViewController {
+class ArtistViewController: UIViewController, GetTopAlbumDelegate {
     
     var lastFmApi: LastFmApi = LastFmApi()
     var searchQuery: String = ""
     
     @IBOutlet weak var artistName: UILabel!
-    @IBOutlet weak var playCount: UILabel!
+    @IBOutlet weak var albumName: UILabel!
+    @IBOutlet weak var albumPlayCount: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad();
+        super.viewDidLoad()
 
         // Use a semicolon if there is code above the closure to prevent a compiler error.
-        { self.getArtist() } ~> { self.updateUI($0) }
+        //{ self.getArtist() } ~> { self.updateUI($0) }
+        
+        getAndShowArtist()
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,17 +31,24 @@ class ArtistViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getArtist() -> Artist {
-        return self.lastFmApi.getTopAlbum(self.searchQuery)
+    func getAndShowArtist() {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            self.lastFmApi.getTopAlbum(self.searchQuery, delegate: self)
+        }
     }
     
-    func updateUI(artist: Artist) {
-        self.title = artist.name
-        self.artistName.text = artist.name
+    func success(album: Album?) {
+        self.title = self.searchQuery
+        self.artistName.text = self.searchQuery
         
-        if let topAlbum = artist.topAlbums.first {
-            self.playCount.text = String(topAlbum.playcount)
+        if let topAlbum = album {
+            self.albumName.text = topAlbum.name
+            self.albumPlayCount.text = String(topAlbum.playCount!)
         }
+    }
+    
+    func failure(error: NSError) {
+        println("error")
     }
     
 }

@@ -74,12 +74,90 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/LastFmApi.swift"
-            timestampString = "437565124.018363"
+            timestampString = "437576577.270975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "getTopAlbum(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getTopAlbum(_:delegate:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Last.fm Finder/ArtistViewController.swift"
+            timestampString = "437577466.01307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "success(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Last.fm Finder/ArtistViewController.swift"
+            timestampString = "437577476.98626"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "failure(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Last_fm_Finder.ArtistViewController.failure (Last_fm_Finder.ArtistViewController)(ObjectiveC.NSError) -&gt; ()"
+                  moduleName = "Last.fm Finder"
+                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/ArtistViewController.swift"
+                  timestampString = "437577476.996771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for Last_fm_Finder.GetTopAlbumDelegate.failure &lt;A : Last_fm_Finder.GetTopAlbumDelegate&gt;(inout Last_fm_Finder.GetTopAlbumDelegate.Self)(ObjectiveC.NSError) -&gt; () in conformance Last_fm_Finder.ArtistViewController : Last_fm_Finder.GetTopAlbumDelegate"
+                  moduleName = "Last.fm Finder"
+                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/ArtistViewController.swift"
+                  timestampString = "437577476.99706"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Last.fm Finder/ArtistViewController.swift"
+            timestampString = "437577485.963788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "failure(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,102 +168,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/LastFmApi.swift"
-            timestampString = "437565124.018363"
+            timestampString = "437577711.435193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getTopAlbum(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getTopAlbum(_:delegate:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/LastFmApi.swift"
-            timestampString = "437566457.660393"
+            timestampString = "437577711.435193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "execute(_:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getTopAlbum(_:delegate:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Last_fm_Finder.LastFmApi.(execute (Last_fm_Finder.LastFmApi) -&gt; (Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "Last.fm Finder"
-                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/LastFmApi.swift"
-                  timestampString = "437566461.526643"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ()) to @callee_owned (@in (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;)) -&gt; (@out ())"
-                  moduleName = "Last.fm Finder"
-                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/LastFmApi.swift"
-                  timestampString = "437566461.526842"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned (@in (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;)) -&gt; (@out ()) to @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ())"
-                  moduleName = "Last.fm Finder"
-                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/LastFmApi.swift"
-                  timestampString = "437566461.527227"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ()) to @callee_unowned @objc_block (@unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, @unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, @unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ())"
-                  moduleName = "Last.fm Finder"
-                  urlString = "file:///Users/lukas/Documents/Projects/Last.fm%20Finder/Last.fm%20Finder/LastFmApi.swift"
-                  timestampString = "437566461.52801"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Last.fm Finder/LastFmApi.swift"
-            timestampString = "437566458.670649"
+            timestampString = "437577645.731351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "execute(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getTopAlbum(_:delegate:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Last.fm Finder/ArtistViewController.swift"
+            timestampString = "437578364.991349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "failure(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -7,17 +7,28 @@
 //
 
 import Foundation
+import JSONJoy
 
-class Artist {
+class Artist: JSONJoy {
     
-    var name: String = ""
-    var topAlbums: [Album] = []
+    var name: String?
+    var albums: [Album]?
     
     init() {}
     
-    init(name: String, topAlbums: [Album]) {
+    required init(_ decoder: JSONDecoder) {
+        self.name = decoder["name"].string
+        if let topAlbums = decoder["topalbums"]["album"].array {
+            self.albums = [Album]()
+            for albumDecoder in topAlbums {
+                self.albums?.append(Album(albumDecoder))
+            }
+        }
+    }
+    
+    init(name: String, albums: [Album]) {
         self.name = name
-        self.topAlbums = topAlbums
+        self.albums = albums
     }
     
 }

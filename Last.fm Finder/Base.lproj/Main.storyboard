@@ -25,7 +25,7 @@
                                 <rect key="frame" x="524" y="64" width="76" height="44"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="Sg4-1Z-ANF"/>
+                                    <constraint firstAttribute="width" constant="76" id="f9l-pu-rfW"/>
                                 </constraints>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,15 +34,23 @@
                                     <segue destination="T8f-nu-irr" kind="show" identifier="searchSegue" id="Vp4-wS-JWK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an artist name." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWw-EY-mNq">
+                                <rect key="frame" x="193" y="187" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xL3-QW-wVU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="445-uc-UDf"/>
-                            <constraint firstItem="bfS-OA-x78" firstAttribute="leading" secondItem="xL3-QW-wVU" secondAttribute="trailing" id="DOV-VL-Uad"/>
-                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="top" id="Mx4-cm-x2h"/>
-                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="cXO-7J-BEs"/>
-                            <constraint firstItem="bfS-OA-x78" firstAttribute="bottom" secondItem="xL3-QW-wVU" secondAttribute="bottom" id="vW5-5x-AIh"/>
-                            <constraint firstAttribute="trailing" secondItem="bfS-OA-x78" secondAttribute="trailing" id="vmz-N6-HyF"/>
+                            <constraint firstItem="xL3-QW-wVU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4Tc-nm-WX4"/>
+                            <constraint firstItem="CWw-EY-mNq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UP7-kh-3jT"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="leading" secondItem="xL3-QW-wVU" secondAttribute="trailing" id="eMY-ET-2tP"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="top" id="gMR-GM-NMr"/>
+                            <constraint firstAttribute="trailing" secondItem="bfS-OA-x78" secondAttribute="trailing" id="h2P-X0-A3M"/>
+                            <constraint firstItem="xL3-QW-wVU" firstAttribute="bottom" secondItem="bfS-OA-x78" secondAttribute="bottom" id="kIR-Cs-69Y"/>
+                            <constraint firstItem="CWw-EY-mNq" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="bottom" constant="79" id="omi-cQ-f77"/>
+                            <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="xNS-6i-snc"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -69,14 +77,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ArtistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-PQ-kLd">
-                                <rect key="frame" x="48" y="107" width="86" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmH-PQ-kLd">
+                                <rect key="frame" x="16" y="72" width="122" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlbumName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-Ep-sds">
+                                <rect key="frame" x="16" y="110" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PlayCount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-Ep-sds">
-                                <rect key="frame" x="48" y="145" width="80" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlbumPlayCount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRy-eM-mrR">
+                                <rect key="frame" x="16" y="139" width="129" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,14 +98,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" constant="6" id="ZxH-GH-nPc"/>
-                            <constraint firstItem="vbs-iz-Pqa" firstAttribute="top" secondItem="TmH-PQ-kLd" secondAttribute="bottom" constant="432" id="kcg-42-lFt"/>
-                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="30" id="t3D-ua-5BT"/>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="leading" secondItem="dy9-Ep-sds" secondAttribute="leading" id="1VV-g4-cQn"/>
+                            <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="Ovr-yy-Y5z" secondAttribute="leadingMargin" id="KH8-Tl-3aX"/>
+                            <constraint firstItem="dy9-Ep-sds" firstAttribute="leading" secondItem="ZRy-eM-mrR" secondAttribute="leading" id="XSX-nW-JsC"/>
+                            <constraint firstItem="ZRy-eM-mrR" firstAttribute="top" secondItem="dy9-Ep-sds" secondAttribute="bottom" constant="8" symbolic="YES" id="YnT-WA-T7c"/>
+                            <constraint firstItem="TmH-PQ-kLd" firstAttribute="top" secondItem="QGN-ZJ-2AE" secondAttribute="bottom" constant="8" symbolic="YES" id="o0g-D9-30V"/>
+                            <constraint firstItem="dy9-Ep-sds" firstAttribute="top" secondItem="TmH-PQ-kLd" secondAttribute="bottom" constant="8" symbolic="YES" id="zo0-2C-lsf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="artistName" destination="TmH-PQ-kLd" id="Qjg-io-qLH"/>
-                        <outlet property="playCount" destination="dy9-Ep-sds" id="gL1-YK-X6m"/>
+                        <outlet property="albumName" destination="dy9-Ep-sds" id="kbT-rh-wnR"/>
+                        <outlet property="albumPlayCount" destination="ZRy-eM-mrR" id="hmD-pW-Wm1"/>
+                        <outlet property="artistName" destination="TmH-PQ-kLd" id="NYU-AU-2VN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKu-0h-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,6 +14,9 @@
 		80322E801A136D49009BB8BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80322E7F1A136D49009BB8BE /* Images.xcassets */; };
 		80322E831A136D49009BB8BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80322E811A136D49009BB8BE /* LaunchScreen.xib */; };
 		80322E8F1A136D49009BB8BE /* Last_fm_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */; };
+		809D6E831A14D7D600347BC6 /* JSONJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D6E6D1A14D75E00347BC6 /* JSONJoy.framework */; };
+		809D6E841A14D7D600347BC6 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D6E7C1A14D78F00347BC6 /* SwiftHTTP.framework */; };
+		809D6E861A14DA2F00347BC6 /* GetTopAlbumDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D6E851A14DA2F00347BC6 /* GetTopAlbumDelegate.swift */; };
 		809F6DBC1A1371C400253469 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F6DBB1A1371C400253469 /* ArtistViewController.swift */; };
 		80BA640B1A14AF1100F42692 /* LastFmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA640A1A14AF1100F42692 /* LastFmApi.swift */; };
 		80BA640D1A14B01D00F42692 /* LastFmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BA640C1A14B01D00F42692 /* LastFmMethods.swift */; };
@@ -30,6 +33,62 @@
 			remoteGlobalIDString = 80322E6F1A136D49009BB8BE;
 			remoteInfo = "Last.fm Finder";
 		};
+		809D6E6C1A14D75E00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79B719D355CF006071F7;
+			remoteInfo = JSONJoy;
+		};
+		809D6E6E1A14D75E00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79C219D355CF006071F7;
+			remoteInfo = JSONJoyTests;
+		};
+		809D6E701A14D75E00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958022E19E6ED8E003C8218;
+			remoteInfo = JSONJoyOSX;
+		};
+		809D6E721A14D75E00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958023819E6ED8E003C8218;
+			remoteInfo = JSONJoyOSXTests;
+		};
+		809D6E7B1A14D78F00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		809D6E7D1A14D78F00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
+			remoteInfo = SwiftHTTPTests;
+		};
+		809D6E7F1A14D78F00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958025919E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		809D6E811A14D78F00347BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958026319E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSXTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +103,9 @@
 		80322E881A136D49009BB8BE /* Last.fm FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Last.fm FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80322E8D1A136D49009BB8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80322E8E1A136D49009BB8BE /* Last_fm_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last_fm_FinderTests.swift; sourceTree = "<group>"; };
+		809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONJoy.xcodeproj; path = "JSONJoy-Swift/JSONJoy.xcodeproj"; sourceTree = "<group>"; };
+		809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = SwiftHTTP/SwiftHTTP.xcodeproj; sourceTree = "<group>"; };
+		809D6E851A14DA2F00347BC6 /* GetTopAlbumDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTopAlbumDelegate.swift; sourceTree = "<group>"; };
 		809F6DBB1A1371C400253469 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		80BA640A1A14AF1100F42692 /* LastFmApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastFmApi.swift; sourceTree = "<group>"; };
 		80BA640C1A14B01D00F42692 /* LastFmMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastFmMethods.swift; sourceTree = "<group>"; };
@@ -57,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809D6E831A14D7D600347BC6 /* JSONJoy.framework in Frameworks */,
+				809D6E841A14D7D600347BC6 /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +137,8 @@
 		80322E671A136D49009BB8BE = {
 			isa = PBXGroup;
 			children = (
+				809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */,
+				809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */,
 				80322E721A136D49009BB8BE /* Last.fm Finder */,
 				80322E8B1A136D49009BB8BE /* Last.fm FinderTests */,
 				80322E711A136D49009BB8BE /* Products */,
@@ -130,6 +196,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		809D6E661A14D75E00347BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809D6E6D1A14D75E00347BC6 /* JSONJoy.framework */,
+				809D6E6F1A14D75E00347BC6 /* JSONJoyTests.xctest */,
+				809D6E711A14D75E00347BC6 /* JSONJoyOSX.framework */,
+				809D6E731A14D75E00347BC6 /* JSONJoyOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809D6E751A14D78E00347BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809D6E7C1A14D78F00347BC6 /* SwiftHTTP.framework */,
+				809D6E7E1A14D78F00347BC6 /* SwiftHTTPTests.xctest */,
+				809D6E801A14D78F00347BC6 /* SwiftHTTPOSX.framework */,
+				809D6E821A14D78F00347BC6 /* SwiftHTTPOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		809F6DBA1A1371A000253469 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +232,7 @@
 			children = (
 				80BA640A1A14AF1100F42692 /* LastFmApi.swift */,
 				80BA640C1A14B01D00F42692 /* LastFmMethods.swift */,
+				809D6E851A14DA2F00347BC6 /* GetTopAlbumDelegate.swift */,
 			);
 			name = LastFmApi;
 			sourceTree = "<group>";
@@ -232,6 +321,16 @@
 			mainGroup = 80322E671A136D49009BB8BE;
 			productRefGroup = 80322E711A136D49009BB8BE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 809D6E661A14D75E00347BC6 /* Products */;
+					ProjectRef = 809D6E651A14D75E00347BC6 /* JSONJoy.xcodeproj */;
+				},
+				{
+					ProductGroup = 809D6E751A14D78E00347BC6 /* Products */;
+					ProjectRef = 809D6E741A14D78E00347BC6 /* SwiftHTTP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				80322E6F1A136D49009BB8BE /* Last.fm Finder */,
@@ -239,6 +338,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		809D6E6D1A14D75E00347BC6 /* JSONJoy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoy.framework;
+			remoteRef = 809D6E6C1A14D75E00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E6F1A14D75E00347BC6 /* JSONJoyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyTests.xctest;
+			remoteRef = 809D6E6E1A14D75E00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E711A14D75E00347BC6 /* JSONJoyOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONJoyOSX.framework;
+			remoteRef = 809D6E701A14D75E00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E731A14D75E00347BC6 /* JSONJoyOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONJoyOSXTests.xctest;
+			remoteRef = 809D6E721A14D75E00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E7C1A14D78F00347BC6 /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 809D6E7B1A14D78F00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E7E1A14D78F00347BC6 /* SwiftHTTPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPTests.xctest;
+			remoteRef = 809D6E7D1A14D78F00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E801A14D78F00347BC6 /* SwiftHTTPOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTPOSX.framework;
+			remoteRef = 809D6E7F1A14D78F00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		809D6E821A14D78F00347BC6 /* SwiftHTTPOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPOSXTests.xctest;
+			remoteRef = 809D6E811A14D78F00347BC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		80322E6E1A136D49009BB8BE /* Resources */ = {
@@ -268,6 +426,7 @@
 				80EDAB361A13F5BC00261815 /* Threading.swift in Sources */,
 				80322E7B1A136D49009BB8BE /* HomeViewController.swift in Sources */,
 				80BA640D1A14B01D00F42692 /* LastFmMethods.swift in Sources */,
+				809D6E861A14DA2F00347BC6 /* GetTopAlbumDelegate.swift in Sources */,
 				80322E791A136D49009BB8BE /* Last_fm_Finder.xcdatamodeld in Sources */,
 				80BA640B1A14AF1100F42692 /* LastFmApi.swift in Sources */,
 				80BA64141A14B14F00F42692 /* Album.swift in Sources */,

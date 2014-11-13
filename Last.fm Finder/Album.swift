@@ -7,17 +7,23 @@
 //
 
 import Foundation
+import JSONJoy
 
-class Album {
+class Album: JSONJoy {
     
-    var name: String = ""
-    var playcount: Int = 0
+    var name: String?
+    var playCount: Int?
     
     init() {}
     
-    init(name: String, playcount: Int) {
+    required init(_ decoder: JSONDecoder) {
+        self.name = decoder["name"].string
+        self.playCount = decoder["playcount"].string?.toInt()
+    }
+    
+    init(name: String, playCount: Int) {
         self.name = name
-        self.playcount = playcount
+        self.playCount = playCount
     }
     
 }

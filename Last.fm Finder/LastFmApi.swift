@@ -7,39 +7,41 @@
 //
 
 import Foundation
+import SwiftHTTP
+import JSONJoy
 
 class LastFmApi {
-    
-    let responseFormat: String
-    let apiKey: String
-    let apiUrl: String
+
+    let apiURL: String
+    let apiParameters: [String: String] = [:]
     
     init() {
-        self.responseFormat = "json"
-        self.apiKey = "a65d06953de344d726c8f5a324f2aaad"
-        self.apiUrl = "http://ws.audioscrobbler.com/2.0/?api_key=\(self.apiKey)&format=\(self.responseFormat)"
+        self.apiURL = "http://ws.audioscrobbler.com/2.0"
+        self.apiParameters["api_key"] = "a65d06953de344d726c8f5a324f2aaad"
+        self.apiParameters["format"] = "json"
     }
     
-    func getTopAlbum(artistName: String) -> Artist {
-        let artist = Artist()
-        artist.name = artistName
-        artist.topAlbums = [Album(name: "Michael Jackson Album 1", playcount: 10)]
+    func getTopAlbum(artistName: String, delegate: GetTopAlbumDelegate) {
+        // Create request object
+        var request = HTTPTask()
+        request.requestSerializer = HTTPRequestSerializer()
+        request.responseSerializer = JSONResponseSerializer()
+        
+        // Append parameters
+        var parameters = self.apiParameters
+        parameters["method"] = LastFmMethod.TopAlbums.rawValue as String
+        parameters["artist"] = artistName
         
         // Execute request
-        self.execute("artist=" + artistName)
-        
-        return artist
-    }
-    
-    func execute(path: String) {
-        let urlString: String = self.apiUrl + "&" + path.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        let url = NSURL(string: urlString)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
-        }
-        
-        task.resume()
+        request.GET(self.apiURL, parameters: parameters, success: {(response: HTTPResponse) in
+                if response.responseObject != nil {
+                    let artist = Artist(JSONDecoder(response.responseObject!))
+                    delegate.success(artist.albums?.first)
+                }
+            }, failure: {(error: NSError, response: HTTPResponse?) in
+                delegate.failure(error)
+                println("error: \(error)")
+        })
     }
     
 }
