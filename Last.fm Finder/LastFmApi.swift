@@ -10,6 +10,10 @@ import Foundation
 import SwiftHTTP
 import JSONJoy
 
+enum LastFmMethod: String {
+    case TopAlbums = "artist.gettopalbums"
+}
+
 class LastFmApi {
 
     let apiURL: String
