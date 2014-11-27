@@ -17,7 +17,7 @@ class Artist: JSONJoy {
     init() {}
     
     required init(_ decoder: JSONDecoder) {
-        self.name = decoder["name"].string
+        self.name = decoder["topalbums"]["@attr"]["artist"].string
         if let topAlbums = decoder["topalbums"]["album"].array {
             self.albums = [Album]()
             for albumDecoder in topAlbums {

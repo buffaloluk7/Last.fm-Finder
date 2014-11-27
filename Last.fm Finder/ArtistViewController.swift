@@ -46,13 +46,13 @@ class ArtistViewController: UIViewController, GetTopAlbumDelegate {
         }
     }
     
-    func success(album: Album?) {
+    func success(artist: Artist) {
         dispatch_async(dispatch_get_main_queue()) {
             self.loadingView.stopAnimating()
             
-            self.artistName.text = self.searchQuery
+            self.artistName.text = artist.name
         
-            if let topAlbum = album {
+            if let topAlbum = artist.albums?.first {
                 self.albumName.text = topAlbum.name
                 self.albumPlayCount.text = "\(topAlbum.playCount!) times played"
             } else {

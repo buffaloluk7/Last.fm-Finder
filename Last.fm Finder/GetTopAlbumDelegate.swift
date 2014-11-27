@@ -10,7 +10,7 @@ import Foundation
 
 protocol GetTopAlbumDelegate {
     
-    func success(album: Album?)
+    func success(artist: Artist)
     func failure(error: NSError)
     
 }

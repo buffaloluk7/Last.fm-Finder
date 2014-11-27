@@ -40,7 +40,7 @@ class LastFmApi {
         request.GET(self.apiURL, parameters: parameters, success: {(response: HTTPResponse) in
                 if response.responseObject != nil {
                     let artist = Artist(JSONDecoder(response.responseObject!))
-                    delegate.success(artist.albums?.first)
+                    delegate.success(artist)
                 }
             }, failure: {(error: NSError, response: HTTPResponse?) in
                 delegate.failure(error)
