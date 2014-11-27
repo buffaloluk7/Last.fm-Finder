@@ -59,7 +59,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="xL3-QW-wVU" id="riu-Lp-bKa"/>
-                        <outlet property="searchButton" destination="bfS-OA-x78" id="RYS-Zc-CLG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

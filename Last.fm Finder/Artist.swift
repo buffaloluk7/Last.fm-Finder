@@ -18,10 +18,17 @@ class Artist: JSONJoy {
     
     required init(_ decoder: JSONDecoder) {
         self.name = decoder["topalbums"]["@attr"]["artist"].string
+        self.albums = [Album]()
+        
         if let topAlbums = decoder["topalbums"]["album"].array {
-            self.albums = [Album]()
             for albumDecoder in topAlbums {
                 self.albums?.append(Album(albumDecoder))
+            }
+        } else {
+            // Parse single album, may fail
+            let album = Album(decoder["topalbums"]["album"])
+            if album.name != nil && album.playCount != nil {
+                self.albums?.append(album)
             }
         }
     }

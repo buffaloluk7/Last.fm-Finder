@@ -34,10 +34,6 @@ class ArtistViewController: UIViewController, GetTopAlbumDelegate {
         self.getAndShowArtist()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     func getAndShowArtist() {
         self.loadingView.startAnimating()
         
