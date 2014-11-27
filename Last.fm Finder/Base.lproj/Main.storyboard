@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dNY-Ix-XQ2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dNY-Ix-XQ2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" restorationIdentifier="searchBar" text="" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-QW-wVU">
+                            <searchBar contentMode="redraw" restorationIdentifier="searchBar" text="" placeholder="Enter an artist name" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-QW-wVU">
                                 <rect key="frame" x="0.0" y="64" width="524" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -34,19 +34,20 @@
                                     <segue destination="T8f-nu-irr" kind="show" identifier="searchSegue" id="Vp4-wS-JWK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an artist name." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWw-EY-mNq">
-                                <rect key="frame" x="193" y="175" width="214" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastfm-logo" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-Q4-WU3">
+                                <rect key="frame" x="120" y="204" width="360" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="BN5-SC-k4Z"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CWw-EY-mNq" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="bottom" constant="67" id="35I-1c-TvH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aDM-Q4-WU3" secondAttribute="bottom" constant="160" id="3UB-jH-jlC"/>
+                            <constraint firstItem="aDM-Q4-WU3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="4KN-hE-Ikc"/>
                             <constraint firstItem="xL3-QW-wVU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4Tc-nm-WX4"/>
+                            <constraint firstItem="aDM-Q4-WU3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="a9a-iO-PS9"/>
                             <constraint firstItem="bfS-OA-x78" firstAttribute="leading" secondItem="xL3-QW-wVU" secondAttribute="trailing" id="eMY-ET-2tP"/>
-                            <constraint firstItem="CWw-EY-mNq" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fV1-UJ-Bl3"/>
                             <constraint firstItem="bfS-OA-x78" firstAttribute="top" secondItem="xL3-QW-wVU" secondAttribute="top" id="gMR-GM-NMr"/>
                             <constraint firstAttribute="trailing" secondItem="bfS-OA-x78" secondAttribute="trailing" id="h2P-X0-A3M"/>
                             <constraint firstItem="xL3-QW-wVU" firstAttribute="bottom" secondItem="bfS-OA-x78" secondAttribute="bottom" id="kIR-Cs-69Y"/>
@@ -150,4 +151,7 @@
             <point key="canvasLocation" x="319" y="370"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lastfm-logo" width="618" height="333"/>
+    </resources>
 </document>
